@@ -1,0 +1,21 @@
+const starWars7 = 'Star Wars: El despertar de la Fuerza'
+const pgStarWars7 = 13
+
+const nameMauri = 'Mauricio'
+const ageMauri = 26
+
+const nameSanti = 'Santi'
+const ageSanti = 12
+
+function canWatchStarWars7(name, age){
+  if (age >= pgStarWars7){
+    alert(`${name} puede pasar a ver ${starWars7}`)
+  }
+  else {
+    `${name} no puede pasar a ver ${starWars7}. Tiene ${age}, y necesita tener ${pgStarWars7}`
+  }
+}
+
+canWatchStarWars7(nameMauri, ageMaure)
+
+const canWatchStarWars7 = (name, age)=>
