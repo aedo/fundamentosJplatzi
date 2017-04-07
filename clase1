@@ -3,3 +3,16 @@ console.log(`el área de un triangulo de base 5 y altura 6 es: ${5*6/2}`)
 let base = 5
 let height = 6
 console.log(`El area de un triangulo base ${base} y altura ${height} es: ${base*height/2} `)
+
+let base = 5
+let height = 6
+
+function areaTriangulito(base, height){
+  return base * height / 2
+}
+console.log(`El area de un triangulo base ${base} y altura ${height} es: ${areaTriangulito(base, height)}`)
+// Función Flecha
+let base = 5
+let height = 6
+let areaTriangulito = (base, height) => base * height / 2
+console.log(`El area de un triangulo base ${base} y altura ${height} es: ${areaTriangulito(base, height)}`)

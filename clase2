@@ -7,15 +7,56 @@ const ageMauri = 26
 const nameSanti = 'Santi'
 const ageSanti = 12
 
-function canWatchStarWars7(name, age){
+function canWatchStarWars7(name, age, isWithAdult = false){
   if (age >= pgStarWars7){
     alert(`${name} puede pasar a ver ${starWars7}`)
   }
+  else if (isWithAdult) {
+    alert(`${name} puede pasar a ver ${starWars7}. Aunque su edad es
+       ${age}, se encuentra acompañado por un adulto`)
+     }
   else {
-    `${name} no puede pasar a ver ${starWars7}. Tiene ${age}, y necesita tener ${pgStarWars7}`
+    alert(`${name} no puede pasar a ver ${starWars7}. Tiene ${age}, y necesita tener ${pgStarWars7}`
+  )}
+}
+
+canWatchStarWars7(nameMauri, ageMauri)
+canWatchStarWars7(nameSanti, ageSanti, true)
+
+
+
+
+let name = prompt("Hola, ingresa tu nombre:")
+let age = prompt(`Bien ${name}, ahora escribe tu edad`)
+age = parseInt(age)
+const starWars7 = 'Star Wars: El despertar de la Fuerza'
+const pgStarWars7 = 13
+const canWatchStarWars7 = (name, age) => {
+if (age >= pgStarWars7){
+  alert(`${name}, puedes pasar a ver ${starWars7} ya que tienes ${age} y la edad mínima para ver esta peli, son ${pgStarWars7}`)
+  }
+else {
+  if (confirm("¿Vienes con alguno de tus padres a ver la película?. Presiona Aceptar si es así. Si no, presiona Cancelar")){
+      alert(`${name}, ya que vienes con tus padres, puedes pasar a ver la película.`)
+    }
+  else {
+    alert (`${name} no puedes pasar a ver ${starWars7}. La edad mínima es 13, y tú tienes ${age}, además no vienes con ninguno de tus padres`)
+    }
+  }
+}
+canWatchStarWars7(name, age)
+
+const name = 'Mauricio'
+const age = 26
+const pgStarWars7 = 13
+const starWars7 = 'Star Wars: El despertar de la Fuerza'
+const canWatchStarWars7 = (name, age) => {
+if (age >= pgStarWars7){
+  alert(`${name} puede pasar a ver ${starWars7} ya que tiene ${age}`)
+  }
+else {
+  alert (`${name} no puede pasar a ver ${starWars7}. La edad mínima es 13, y el(ella) tiene ${age}`)
   }
 }
 
-canWatchStarWars7(nameMauri, ageMaure)
-
-const canWatchStarWars7 = (name, age)=>
+canWatchStarWars7(name, age)
