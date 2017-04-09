@@ -1,0 +1,17 @@
+const 'mauri'
+const dias = [
+  "Lunes",
+  "Martes",
+  "Miercoles",
+  "Jueves",
+  "Viernes",
+  "Sabado",
+  "Domingo"
+]
+
+let size = "dias.length"
+for (let i = 0; i < size; i++) {
+  console.log(`El dia ${i} es el ${dias[i]}`)
+  math.random(math.round())
+
+}
