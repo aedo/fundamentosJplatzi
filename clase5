@@ -9,18 +9,15 @@ let round = 0
 function ambosSiguenVivos(){
   return vidaGoku > 0 && vidaSuperman > 0
 }
-const gokuSigueVivo = () => vidaGoku < 0
-const superSigueVivo = () => vidaSuperman < 0
-
+const gokuSigueVivo = () => vidaGoku > 0
 //const ambosSiguenVivos = () => vidaGoku > 0 && vidaSuperman > 0
-const calcularGolpe() => Math.round(Math.random() * (MAX_POWER-MIN_POWER)) + MIN_POWER
+const calcularGolpe = () => Math.round(Math.random() * (MAX_POWER-MIN_POWER)) + MIN_POWER
 
-}
 while (ambosSiguenVivos()){
   round++
   console.log(`Round ${round}`)
   const golpeGoku = calcularGolpe()
-  const golpeSuperman() = calcularGolpe()
+  const golpeSuperman = calcularGolpe()
 
   if (golpeGoku > golpeSuperman) {
     console.log(`Goku ataca a Superman con ${golpeGoku}`)
@@ -31,14 +28,11 @@ while (ambosSiguenVivos()){
     console.log(`Superman ataca a Goku con ${golpeSuperman}`)
     vidaGoku -= golpeSuperman
     console.log(`Gokú queda con ${vidaGoku}`)
-    round++
-
+}
+}
     if (gokuSigueVivo()){
       console.log(`Goku ganó, su vida es de ${vidaGoku}`)
     }
-    else (superSigueVivo()){
+    else {
       console.log(`Superman ganó, su vida es de ${vidaSuperman}`)
     }
-  }
-
-}
