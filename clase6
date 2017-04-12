@@ -1,0 +1,20 @@
+// 27 10 1991
+const nacimiento = new Date(1991, 9, 27)
+const hoy = new Date()
+const tiempo = hoy - nacimiento
+
+//tiempo para cumpleanhos
+let nextBirthday = new Date(hoy.getFullYear(), nacimiento.getMonth(), nacimiento.getDate())
+nextBirthday
+
+const nombreDia = [
+  'Domingo',
+  'Lunes',
+  'Martes',
+  'Miercoles',
+  'Jueves',
+  'Viernes',
+  'Sábado'
+
+]
+console.log(nombreDia[nextBirthday.getDay()])
