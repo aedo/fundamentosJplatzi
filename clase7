@@ -14,3 +14,4 @@ let distancia = (p1,p2) =>{
   //return(x*x+y*y)
 }
 console.log(distancia(p1,p2))
+console.log(distancia(p2, {x:2, y:-20}))
