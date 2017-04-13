@@ -15,6 +15,5 @@ const nombreDia = [
   'Jueves',
   'Viernes',
   'Sábado'
-
 ]
 console.log(nombreDia[nextBirthday.getDay()])
