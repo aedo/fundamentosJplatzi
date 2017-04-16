@@ -1,3 +1,28 @@
+
+const Punto = (x,y) => {
+  this.x = x
+  this.y = y
+  /* sirve para guardar datos (bloque constructor)
+  de los valores en parametro. this hace referencia al objeto que js
+  está creando cuando se usa 'new' para crear un objeto. Despues del
+  '.' se pone el atributo y se le asigna los valores que llegan en
+  el lugar del parametro */
+
+  Punto.prototype.moverEnX = function moverEnX(x) {
+    this.x += x
+
+  }
+  /*Arriba está el método para que el punto se mueva en X.
+  Para hacerlo, se usa prototype, y después del '.' se anota el nombre
+  que tendrá el método y la función (idealmente con nombre, para que
+el debugger encuentre dónde está el error).
+  */
+  Punto.prototype.moverEnY = function moverEnY(y) {
+    this.y += y
+    //this referencia aquí, a CADA uno de los puntos
+  }
+}
+const p3 = new Punto(3, 4)
 const p1 = {
   x:0,
   y:4
